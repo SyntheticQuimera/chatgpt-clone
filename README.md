@@ -1,8 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 ## URL:
-<a to="https://chatgpt-clone-kohl.vercel.app/">
+<a href="https://chatgpt-clone-kohl.vercel.app/">
 https://chatgpt-clone-kohl.vercel.app/
-   </a>
+</a>
 
 ## Getting Started
 
