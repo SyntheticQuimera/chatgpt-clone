@@ -7,7 +7,6 @@ import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import SideBar from "./SideBar";
-import ModelSelection from "./ModelSelection";
 
 const Header = () => {
   const [sideBarOpen, setSideBarOpen] = useState(true);
@@ -55,7 +54,6 @@ const Header = () => {
           onClick={() => setSideBarOpen(!sideBarOpen)}
           className='cursor-pointer text-2xl text-textSecondaryColor'
         />
-        <ModelSelection />
         <FiPlus
           onClick={createNewChat}
           className='cursor-pointer text-2xl text-textSecondaryColor'

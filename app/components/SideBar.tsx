@@ -6,7 +6,6 @@ import { collection, orderBy, query } from "firebase/firestore";
 import { db } from "../../firebase";
 import NewChat from "./NewChat";
 import ChatRow from "./ChatRow";
-import ModelSelection from "./ModelSelection";
 import { FadeLoader } from "react-spinners";
 import { FiLogOut } from "react-icons/fi";
 import { useRouter } from "next/navigation";
@@ -27,9 +26,6 @@ const SideBar = () => {
       <div className='flex flex-col space-y-5'>
         <div className='pr-4'>
           <NewChat />
-          <div className='hidden md:inline'>
-            <ModelSelection />
-          </div>
         </div>
         <div className='flex h-420 flex-col space-y-2 overflow-y-auto border-b border-white/10 pb-4 pr-4 scrollbar-thin scrollbar-track-sideBarBackground scrollbar-thumb-scrollbarThumb hover:scrollbar-thumb-scrollbarThumbHover'>
           {loading && (

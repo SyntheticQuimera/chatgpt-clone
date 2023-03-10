@@ -7,7 +7,6 @@ import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { db } from "@/firebase";
 import { toast } from "react-hot-toast";
 import useSWR from "swr";
-import ModelSelection from "./ModelSelection";
 
 type Props = {
   chatId: string;
